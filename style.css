@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  color: rgb(237, 237, 237);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+p {
+  margin: 1.5rem 0rem;
+  line-height: 160%;
+}
+header,
+.content__int,
+.logos,
+section .articles,
+.countainer__item,
+.contact,
+footer {
+  padding: 1rem 2rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: rgb(255, 255, 74);
+  border-radius: 2px;
+  color: black;
+}
+header nav,
+header .btn {
+  display: none;
+}
+
+.content__int h2 {
+  font-size: 2.5rem;
+}
+.countainer__item,
+footer {
+  background-color: rgb(56, 55, 62);
+}
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.logos .logo {
+  width: 50%;
+  text-align: center;
+  margin: 0.8rem 0rem;
+}
+.logos .logo img {
+  max-width: 90px;
+  margin: auto;
+}
+section .articles article {
+  margin: 1rem 0rem;
+}
+section .articles article img {
+  width: 100%;
+}
+.articles i {
+  font-size: large;
+}
+.second {
+  margin-top: 3rem;
+}
+.contact {
+  margin: 3rem 0rem;
+}
+.contact .btn {
+  margin-top: 5rem;
+}
+
+footer {
+  padding: 3rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer span {
+  padding: 0 0.5rem;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header,
+  .content__int,
+  .logos,
+  section .articles,
+  .countainer__item,
+  .contact,
+  footer {
+    padding: 1.5rem 3rem;
+  }
+  .logos .logo {
+    width: 33%;
+  }
+  .contact {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1025px) {
+  header,
+  .content__int,
+  .logos,
+  section .articles,
+  .countainer__item,
+  .contact,
+  footer {
+    padding: 2rem 5rem;
+  }
+  .burgerBar {
+    display: none;
+  }
+  header nav,
+  header .btn {
+    display: flex;
+  }
+  .content__int {
+    width: 60%;
+  }
+  .logos .logo {
+    width: 16%;
+  }
+  section .articles {
+    display: flex;
+    justify-content: space-between;
+  }
+  section .articles article {
+    width: 47%;
+  }
+  .countainer__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .countainer__item div {
+    width: 45%;
+  }
+  .contact {
+    max-width: 50%;
+  }
+}
